@@ -4,5 +4,5 @@ function myFunction() {
 }
 function showPage() {
   document.querySelector(".loader").style.display = "none";
-  document.querySelector(".myDiv").style.display = "block";
+  document.querySelector(".mainPage").style.display = "block";
 }
