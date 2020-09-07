@@ -48,9 +48,13 @@
           .mainPage {
             display: none;
             height: 100vh;
+            background-color: #f5f5f5;
+            background-image: url(./main_bg.png);
+            background-position: center center;
           }
           .mainPage--navbar{
               background: yellow;
+              opacity: 0.5;
               position: sticky;
               height: 100px;
               display: flex;
@@ -70,15 +74,18 @@
           .mainPage--navbar--nameTitle--navItem{
               background: green;
               margin-right:300px;
+              /* padding:100px; */
               padding: 50px;
-              width:300px;
+              /* width:300px; */
               flex-grow:0;
               flex-shrink:0;
               display:flex;
-              justify-content: space-between;
+              justify-content: space-around;
+              font-size: larger;
+
         }
           .mainPage--container{
-              background:red;
+              /* background:red; */
               margin-top: 0px;
               height:70vh;
               width: 100%;
@@ -86,12 +93,75 @@
               flex-direction: row;
               flex-wrap: nowrap;
               justify-content: center;
+             
           }
           .mainPage--container--homePage{
               border-radius: 30px;
               height: 565px;
               width: 1040px;
-              background: gray;
+              /* background: gray; */
               margin-top: 50px;
+              position: relative;
+              box-shadow: 10px 5px 5px black;
+              border: solid 1px;
           }
+.uppart{
+  /* background-color: greenyellow; */
+  height: 307px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.downpart{
+  background-color: hotpink;
+  height: 258px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+.photo{
+  /* background-color: blue; */
+  background-image: url(./photo.png);
+  background-size: cover;
+  height: 280px;
+  width: 276px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.photo:hover{
+  box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+  margin-top: -10px;
+  transition: all ease 0.5s;
+}
+.title{
+  background-color: white;
+  height: 170px;
+  width: 250px;
+  position: absolute;
+  top: 95px;
+  right: 195px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.description{
+  background-color: burlywood;
+  width:400px;
+  height:200px;
+  top: 25px;
+  left: 50px;
+  position: absolute;
 
+}
+.address{
+  background-color: cadetblue;
+  width: 400px;
+  height: 200px;
+  right: 50px;
+  top: 25px;
+  position: absolute;
+}
+.title-name{
+
+}
